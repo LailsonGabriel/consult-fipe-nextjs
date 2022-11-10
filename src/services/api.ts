@@ -7,9 +7,9 @@ const api = axios.create({
 
 export const getBrands = async (): Promise<IModelBrand[] | any> => {
   try {
-    const response = await api.get("carros/marcas");
+    const { data } = await api.get("carros/marcas");
 
-    return response;
+    return data;
   } catch (err) {
     console.log(err);
   }
