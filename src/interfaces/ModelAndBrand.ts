@@ -1,6 +1,6 @@
 export interface IModelBrand {
   nome: string;
-  code: string;
+  codigo: string;
 }
 
 export interface BrandsProps {
